@@ -1,0 +1,24 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='welcome.css')}}">
+	<title> Sign In</title>
+</head>
+<body>
+<center>
+<h1> Sign In </h1>
+<form id="frm2" action="signin">
+<input type="text" id="username" name="username" placeholder="user name">
+<br><br>
+<input type="password" id="password" name="name" placeholder="password" >
+<br><br>
+<button type="submit" id="submit" name="submit" value="submit" formaction= "{{url_for('home')}}">Sign In</button>
+<br><br>
+<button type="submit" id="submit" name="submit" value="submit" formaction="{{url_for('welcome')}}">Cancel</button><br><br>
+
+
+
+</form>
+
+</center>
+</body>
+</html>

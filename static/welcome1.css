@@ -1,0 +1,21 @@
+h1{
+	color: white;
+}
+
+body{
+	background-image: url("http://dingo.care2.com/pictures/greenliving/3/2440.large.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+a.bla{
+	color: white;
+	font-size: 200%;
+}
+
+#pi{
+
+	color:white;
+	font-size:150%;
+}
