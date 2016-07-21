@@ -3,11 +3,9 @@ h1{
 }
 
 body{
-<<<<<<< HEAD
-	background-image: url("http://revelwallpapers.net/d/736D714D6732445A72646A4C72344F6671584F4676745774764E64355A673D3D/kids-cartoon-paradise-autumn-read-book-tree.jpg");
-=======
-	background-image: url("http://thumbs.dreamstime.com/z/cloudy-seamless-background-11136261.jpg");
->>>>>>> 4bc9cb5ae81918d40dc57e0b58e62edfd4304e7a
+
+	background-image: url("night.jpeg");
+
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -23,13 +21,17 @@ p
 
 
 
-font-family: 'Arizonia', cursive;
-font-size: 400%;
-color: black;
+font-size: 230%;
+color: white;
 
 
 
 
+}
+
+.title1
+{
+	font-size: 460%;
 }
 
 .t
@@ -41,14 +43,14 @@ color: black;
 
 #pi{
 
-	color:blue;
+	color:white;
 	font-size:150%;
 }
 
 .doge{
 	text-align: left;
 	max-width: 550px;
-	float: left;
+	float: center;
 
 }
 
@@ -62,8 +64,7 @@ color: black;
 	font-size: 25px;
 	padding-bottom: 10em;
 }
-<<<<<<< HEAD
-=======
+
 
 .block22{
 	padding-top: 50px;
@@ -74,4 +75,4 @@ color: black;
 	text-align: center;
 	background-color:black;
 }
->>>>>>> 4bc9cb5ae81918d40dc57e0b58e62edfd4304e7a
+

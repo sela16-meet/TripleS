@@ -1,30 +1,14 @@
-<html>
-
+{% extends 'base.html' %}
+{% block style %}
 <head>
 
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='rama.css') }}">
 
 </head>
-
+{% endblock %}
+{% block content %}
 <body>
-<<<<<<< HEAD
 <center>
-<menu type="toolbar" id="mymenu">
-
-	<menuitem label="Welcome Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('welcome')}}">TripleS</a>
-
-	</menuitem>
-	<menuitem label="Sign Up Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('signup')}}">Sign Up</a>
-
-	</menuitem>
-	<menuitem label="Sign In Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('signin')}}">Sign In</a>
-
-	</menuitem>
-
-	<menuitem label="About Us Page" onclick="" icon="ico_reload.png"><a href="{{url_for('contact')}}">About Us</a>
-
-	</menuitem>
-</menu>
 
 
 <h1 id="storyname">STORY TIME!</h1>
@@ -50,7 +34,6 @@
 <p>STORY SUMMARY</p><p>date:</p><h6 id="storyname"></h6></div></td>
 </table>
 </tr></table>
-=======
 
 <table id="table"><tr><td><a href="{{url_for('contact')}}">contact us</a></td><td><a href="{{url_for('welcome')}}">log out</a></td></tr></table>
 
@@ -78,7 +61,6 @@
 
 <p>once upon a time not long ago i was a little girl</p><p>11/2/2001</p><h6 id="storyname"></h6></div></td>
 </table>
->>>>>>> 4bc9cb5ae81918d40dc57e0b58e62edfd4304e7a
 </body>
-</html>
+{% endblock %}
 		
