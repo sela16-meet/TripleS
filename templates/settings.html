@@ -26,21 +26,22 @@ Change Username:
 <br>
 
 Change Background: <br>
-
-<input type="radio" name="newbackgroundimage1"><img src="/static/underwater.jpg"> <br>
-<input type="radio" name="newbackgroundimage2"><img src="/static/space.jpeg"><br>
-<input type="radio" name="newbackgroundimage3"><img src="/static/nature.jpeg"><br>
-<input type="radio" name="newbackgroundimage4"><img src="/static/fall.jpeg"> <br>
+<form name="backgroundimg" action="home.html" method="post">
+	<input type="radio" name="bckimg" value="water"><img src="/static/underwater.jpg"><br>
+	<input type="radio" name="bckimg" value="space"><img src="/static/space.jpeg"><br>
+	<input type="radio" name="bckimg" value="forest"><img src="/static/nature.jpeg"><br>
+	<input type="radio" name="bckimg" value="aotumn"><img src="/static/fall.jpeg"><br>
+	<input type="submit" name="Submit" value="Save">
+</form>
 
 Change Avatar: <br>
-
-<input type="radio" src="" name="newavatar1"> <br>
-<input type="radio" src="" name="newavatar2"> <br>
-<input type="radio" src="" name="newavatar3"> <br>
-<input type="radio" src="" name="newavatar4"> <br>
-
-<button>Save Changes</button>
-<button>Cancel</button>
+<form name="avatarimg" action="home.html" method="post">
+	<input type="radio" name="newavatar" value="1">a <br>
+	<input type="radio" name="newavatar" value="2">b <br>
+	<input type="radio" name="newavatar" value="3">c <br>
+	<input type="radio" name="newavatar" value="4">d <br>
+	<input type="submit" name="Submit" value="Save">
+</form>
 
 </body>
 

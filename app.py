@@ -26,5 +26,9 @@ def home():
 def story():
 	return render_template("story.html")
 
+@app.route('/settings')
+def settings():
+	return render_template("settings.html")
+
 if __name__=="__main__":
  	app.run()
