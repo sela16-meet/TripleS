@@ -3,7 +3,11 @@ h1{
 }
 
 body{
+<<<<<<< HEAD
 	background-image: url("http://revelwallpapers.net/d/736D714D6732445A72646A4C72344F6671584F4676745774764E64355A673D3D/kids-cartoon-paradise-autumn-read-book-tree.jpg");
+=======
+	background-image: url("http://thumbs.dreamstime.com/z/cloudy-seamless-background-11136261.jpg");
+>>>>>>> 4bc9cb5ae81918d40dc57e0b58e62edfd4304e7a
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -58,3 +62,16 @@ color: black;
 	font-size: 25px;
 	padding-bottom: 10em;
 }
+<<<<<<< HEAD
+=======
+
+.block22{
+	padding-top: 50px;
+
+	width: 100%;
+	height: 100px;
+	margin:0 auto;
+	text-align: center;
+	background-color:black;
+}
+>>>>>>> 4bc9cb5ae81918d40dc57e0b58e62edfd4304e7a

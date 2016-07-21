@@ -9,8 +9,6 @@ def welcome():
 def signin():
  	return render_template("signin.html")
 
-def go_to_sign_in():
-	return render_template("signin.html")
 
 @app.route('/signup')
 def signup():
