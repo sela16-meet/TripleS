@@ -1,24 +1,13 @@
-<html>
+{% extends 'base.html' %}
+{% block style %}
 <head>
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='welcome.css')}}">
 	<title> Sign In</title>
 </head>
+{% endblock %}
+{% block content %}
 <body>
-<menu type="toolbar" id="mymenu">
 
-	<menuitem label="Welcome Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('welcome')}}">TripleS</a>
-	</menuitem>
-
-	<menuitem label="Sign Up Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('signup')}}">Sign Up</a>
-	</menuitem>
-
-	<menuitem label="Sign In Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('signin')}}">Sign In</a>
-	</menuitem>
-
-	<menuitem label="About Us Page" onclick="" icon="ico_reload.png"><a href="{{url_for('contact')}}">About Us</a>
-	</menuitem>
-
-</menu>
 
 <center>
 
@@ -33,10 +22,7 @@
 
 <input type="password" id="password" name="password" placeholder="password" required="yes" autocomplete="off">
 
-<input type="text" id="username" name="username" placeholder="user name">
-<br><br>
-<input type="password" id="password" name="name" placeholder="password" >
-<br><br>
+
 
 <br>
 <br>
@@ -54,4 +40,4 @@
 
 </body>
 
-</html>
+{% endblock %}
