@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='rama.css') }}">
+
+</head>
+
+<body>
+<center>
+<menu type="toolbar" id="mymenu">
+
+	<menuitem label="Welcome Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('welcome')}}">TripleS</a>
+
+	</menuitem>
+	<menuitem label="Sign Up Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('signup')}}">Sign Up</a>
+
+	</menuitem>
+	<menuitem label="Sign In Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('signin')}}">Sign In</a>
+
+	</menuitem>
+
+	<menuitem label="About Us Page" onclick="" icon="ico_reload.png"><a href="{{url_for('contact')}}">About Us</a>
+
+	</menuitem>
+</menu>
+
+
+<h1 id="storyname">STORY TIME!</h1>
+<table class="heisenberg">
+</table></center>
+<tr>
+
+<td class="tyrion"><div class="items" id="div1"> <img class="yo" src="{{url_for('static', filename='avatar.png')}}"><p>by:</p>
+
+<p>STORY SUMMARY</p><p>date:</p><h6 id="storyname"></h6></div></td>
+
+<td class="eddard"><div class="items" id="div1"> <img class="yo" src="{{url_for('static', filename='avatar.png')}}"><p>by:</p>
+
+<p>STORY SUMMERY</p><p>date:</p><h6 id="storyname"></h6></div></td>
+</tr>
+<tr>
+<td><div class="items" id="div1"><img class="yo" src="{{url_for('static', filename='avatar.png')}}"><p>by:</p>
+
+<p>STORY SUMMARY</p><p>date:</p><h6 id="storyname"></h6></div></td>
+
+<td class="cersei"><div class="items" id="div1"><img class="yo" src="{{url_for('static', filename='avatar.png')}}"><p>by:</p>
+
+<p>STORY SUMMARY</p><p>date:</p><h6 id="storyname"></h6></div></td>
+</table>
+</tr></table>
+</body>
+</html>
+		

@@ -1,0 +1,68 @@
+#storyname {
+	color: #8B4513;
+}
+
+.h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.headline {
+	color:"DC143C";
+	font-family: "Times New Roman";
+	font-style: italic;
+	font-size: 14px;
+	border-style: dotted;
+}
+#font { 
+background:#C0C0C0;
+text-align: center;
+font-size:30px;
+font-style: italic;
+font-family: "Times New Roman", Times, serif;
+}
+.items {
+font-size:30px;
+text-align: center
+font-style: italic;
+font-family: "Times New Roman", Times, serif;
+}
+
+body{
+	background-image: url("http://revelwallpapers.net/d/736D714D6732445A72646A4C72344F6671584F4676745774764E64355A673D3D/kids-cartoon-paradise-autumn-read-book-tree.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center; 
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+
+a.bla{
+	color: white;
+	font-size: 200%;
+}
+
+.yo{
+	width:200px;
+	height:200px;
+}
+
+p{
+	color: #8B4513;
+	font-weight: bold;
+	font-family: "monospace"
+}
+
+.tyrion{
+	padding-left: 10em;
+}
+
+.eddard{
+	padding-left: 10em;
+}
+
+.cersei{
+	padding-left: 10em;
+}
+
