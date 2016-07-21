@@ -4,7 +4,7 @@ h1{
 
 body{
 
-	background-image: url("stars.jpg");
+	background-image: url("night.jpeg");
 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -21,13 +21,17 @@ p
 
 
 
-font-family: 'Arizonia', cursive;
-font-size: 400%;
-color: black;
+font-size: 230%;
+color: white;
 
 
 
 
+}
+
+.title1
+{
+	font-size: 460%;
 }
 
 .t

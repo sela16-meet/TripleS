@@ -10,6 +10,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   </head>
   <body>
+
+  {% block navbar %}
+<nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand" href="#">TripleS</a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{{url_for('signin')}}">Sign In </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{url_for('signup')}}">Sign Up</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{url_for('contact')}}">About</a>
+    </li>
+  </ul>
+  <form class="form-inline pull-xs-right">
+    <input class="form-control" type="text" placeholder="HashtagSearch">
+    <button class="btn btn-success-outline" type="submit">Search</button>
+  </form>
+</nav>
+{% endblock %}
    {% block style %}
    {% endblock %}
   
@@ -18,6 +39,7 @@
     {% block content %}
      
     {% endblock %}
+
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB" crossorigin="anonymous"></script>
