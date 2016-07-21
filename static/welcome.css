@@ -43,14 +43,14 @@ color: white;
 
 #pi{
 
-	color:blue;
+	color:white;
 	font-size:150%;
 }
 
 .doge{
 	text-align: left;
 	max-width: 550px;
-	float: left;
+	float: center;
 
 }
 
