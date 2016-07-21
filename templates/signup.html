@@ -4,33 +4,59 @@
 	<title> Sign Up</title>
 </head>
 <body>
+<menu type="toolbar" id="mymenu">
+
+	<menuitem label="Welcome Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('welcome')}}">TripleS</a>
+	</menuitem>
+
+	<menuitem label="Sign Up Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('signup')}}">Sign Up</a>
+	</menuitem>
+
+	<menuitem label="Sign In Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('signin')}}">Sign In</a>
+	</menuitem>
+
+	<menuitem label="About Us Page" onclick="" icon="ico_reload.png"><a href="{{url_for('contact')}}">About Us</a>
+	</menuitem>
+
+</menu>
+
 <center>
+
 <h1> Sign Up </h1>
+
 <form id="frm3" action="{{url_for('home')}}">
-<<<<<<< HEAD
+
 <input type="text" id="username" name="username" placeholder="user name" required="yes">
-<br><br>
+
+<br>
+<br>
+
 <input type="password" id="password" name="password" placeholder="password" required="yes">
-<br><br>
+
+<br>
+<br>
+
 <input type="email" id="email" name="email" placeholder="email" required="yes">
-<br><br>
+
+<br>
+<br>
+
 <input type="text" id="age" name="age" placeholder="age" required="yes">
-=======
-<input type="text" id="username" name="username" placeholder="user name">
-<br><br>
-<input type="password" id="password" name="password" placeholder="password">
-<br><br>
-<input type="text" id="email" name="email" placeholder="email">
-<br><br>
-<input type="text" id="age" name="age" placeholder="age">
->>>>>>> 4bc9cb5ae81918d40dc57e0b58e62edfd4304e7a
-<br><br>
+
+<br>
+<br>
+
 <button type="submit" id="submit" name="submit" value="submit">Sumbit</button>
-<br><br>
+
+<br>
+<br>
 
 <button type="submit" id="submit" name="submit" value="submit" formaction="{{url_for('welcome')}}">Cancel</button><br><br>
 
 </form>
+
 </center>
+
 </body>
+
 </html>

@@ -1,27 +1,60 @@
 <html>
+
 <head>
+
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='welcome.css')}}">
-	<title> Contact Us</title>
+
+<title> Contact Us</title>
+
 </head>
+
 <body>
+
+<menu type="toolbar" id="mymenu">
+
+	<menuitem label="Welcome Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('welcome')}}">TripleS</a>
+	</menuitem>
+
+	<menuitem label="Sign Up Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('signup')}}">Sign Up</a>
+	</menuitem>
+
+	<menuitem label="Sign In Page" onclick="" icon="ico_reload.png"> <a href="{{url_for('signin')}}">Sign In</a>
+	</menuitem>
+
+	<menuitem label="About Us Page" onclick="" icon="ico_reload.png"><a href="{{url_for('contact')}}">About Us</a>
+	</menuitem>
+
+</menu>
+
 <form>
-<button type="submit" id="submit" name="submit" formaction="{{url_for('welcome')}}"><- Back</button>
+
 <form>
+
 <center>
+
 <h1> Contact us </h1>
 
-<div class= "doge"><p id="pi"> 
+<div class= "doge">
+
+<center>
+
+<p id="pi"> 
+
 Hello there! We are a group of Palestinian and Israeli teenagers in a program called MEET.
-We have been studying computer science and business management for 3 years now, and we've decided that it's finally time for us to create our own project :) <br><br>
+We have been studying computer science and business management for 3 years now, and we've decided that it's finally time for us to create our own project :) 
+<br>
+<br>
 So after many debates and a lot of Toffi, we have decided to devote our project to stereotypes and most importantly-breaking the damn thing!!!
 So we invite you to share with us your OWN stories (either real or made up) that take us a step closer to our vision- A world where society defies social expectations ---> shiranfo@walla.com
 
-</p></div>
-<br><br><br><br><br><br><br><br><br><br><br>
- <div class="fry"><video width="320" height="240" controls>
-  <source src="https://www.youtube.com/watch?v=XjJQBjWYDTs.mp4" type="video/mp4">
-</video></div>
+</p>
 
 </center>
+
+</div>
+
+</center>
+
 </body>
+
 </html>
