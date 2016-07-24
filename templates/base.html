@@ -8,6 +8,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='rama.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='welcome.css')}}">
+
+
+<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+
   </head>
   <body>
 
@@ -31,14 +37,18 @@
   </form>
 </nav>
 {% endblock %}
-   {% block style %}
-   {% endblock %}
   
-    
+  <div class="container">
+  {% block cards %}
+    {% endblock %}
 
     {% block content %}
      
     {% endblock %}
+    
+  </div>
+  
+    
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
