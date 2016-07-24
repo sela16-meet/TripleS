@@ -73,5 +73,9 @@ def lhome(uid):
 	user = session.query(User).filter_by(id = uid).first()
 	return render_template("lhome.html", user=user)
 
+@app.route('/profile')
+def profile():
+	return render_template("profile.html")
+
 if __name__=="__main__":
  	app.run()
