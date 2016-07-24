@@ -13,7 +13,7 @@
 
 <h1> Sign In </h1>
 
-<form id="frm2" action="signin">
+<form id="frm2" action="{{url_for('signin')}}"" method="POST">
 
 <input type="text" id="username" name="username" placeholder="user name" required="yes" autocomplete="on">
 
@@ -27,7 +27,7 @@
 <br>
 <br>
 
-<button type="submit" class="btn btn-primary" id="submit" name="submit" value="submit" formaction= "{{url_for('home')}}">Sign In</button>
+<button type="submit" class="btn btn-primary" id="submit" name="submit" value="submit" action= "{{url_for('signin')}}">Sign In</button>
 
 <br>
 <br>

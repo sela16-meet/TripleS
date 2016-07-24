@@ -1,18 +1,61 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect,url_for
 app = Flask(__name__)
+
+from database_setup import Base, User,Story
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+engine = create_engine('sqlite:///crudlab.db')
+Base.metadata.create_all(engine)
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
+
 
 @app.route('/')
 def welcome():
  	return render_template("welcome.html")
 
-@app.route('/signin')
+@app.route('/signin', methods=['GET', 'POST'])
 def signin():
- 	return render_template("signin.html")
+	print('1')
+ 	if request.method == 'GET':	
+		return render_template('signin.html')
+	else:
+		print('2')
+		loger = session.query(User).filter_by(name = request.form['username']).first()
+		print('3')
+		if request.form['username'] == loger.name :
+			print ('after username')
+			if loger.password == request.form['password'] :
+				print ('after password')
+				return redirect(url_for('lhome',uid=loger.id))
+				print ('after redirect')
+			else:
+				print('5')
+				#wrong password
+
+		else:
+			print('6')
+			#you didnt sign up
 
 
-@app.route('/signup')
+
+@app.route('/signup', methods=['GET', 'POST'])
 def signup():
- 	return render_template("signup.html")
+ 	if request.method == 'GET':	
+		return render_template('signup.html')
+	else:
+		new_name = request.form['username']
+		exists = db.session.query(User.id).filter_by(name='new_name').scalar() is not None
+		if exists == 0 :
+			new_email = request.form['email']
+			new_password = request.form['password']
+			new_age = request.form['age']
+			new_user= User(name=new_name,email=new_email,password=new_password,age = new_age)
+			session.add(new_user)
+			session.commit()
+			return redirect(url_for('lhome',uid=new_user.id))
+		else:
+			print ('user name taken')
 
 @app.route('/contact')
 def contact():
@@ -22,13 +65,13 @@ def contact():
 def home():
 	return render_template("home.html")
 
-@app.route('/story')
-def story():
-	return render_template("story.html")
 
-@app.route('/settings')
-def settings():
-	return render_template("settings.html")
+
+
+@app.route('/lhome/<uid>')
+def lhome(uid):
+	user = session.query(User).filter_by(id = uid).first()
+	return render_template("lhome.html", user=user)
 
 if __name__=="__main__":
  	app.run()
