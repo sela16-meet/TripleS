@@ -16,13 +16,11 @@ def welcome():
 
 @app.route('/signin', methods=['GET', 'POST'])
 def signin():
-	print('1')
  	if request.method == 'GET':	
 		return render_template('signin.html')
 	else:
-		print('2')
 		loger = session.query(User).filter_by(name = request.form['username']).first()
-		print('3')
+		print(loger)
 		if request.form['username'] == loger.name :
 			print ('after username')
 			if loger.password == request.form['password'] :
@@ -30,11 +28,11 @@ def signin():
 				return redirect(url_for('lhome',uid=loger.id))
 				print ('after redirect')
 			else:
-				print('5')
+				print('wrong pass')
 				#wrong password
 
 		else:
-			print('6')
+			print('didnt signup')
 			#you didnt sign up
 
 
@@ -45,17 +43,18 @@ def signup():
 		return render_template('signup.html')
 	else:
 		new_name = request.form['username']
-		exists = db.session.query(User.id).filter_by(name='new_name').scalar() is not None
-		if exists == 0 :
-			new_email = request.form['email']
-			new_password = request.form['password']
-			new_age = request.form['age']
-			new_user= User(name=new_name,email=new_email,password=new_password,age = new_age)
-			session.add(new_user)
-			session.commit()
-			return redirect(url_for('lhome',uid=new_user.id))
-		else:
-			print ('user name taken')
+		#exists = db.session.query(User.id).filter_by(name='new_name').scalar() is not None
+		#print("1")
+		#if exists == 0 :
+		new_email = request.form['email']
+		new_password = request.form['password']
+		new_age = request.form['age']
+		new_user= User(name=new_name,email=new_email,password=new_password,age = new_age)
+		session.add(new_user)
+		session.commit()
+		return redirect(url_for('lhome',uid=new_user.id))
+		#else:
+			#print ('user name taken')
 
 @app.route('/contact')
 def contact():
