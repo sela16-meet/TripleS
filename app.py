@@ -32,8 +32,8 @@ def signin():
 				#wrong password
 
 		else:
-			print('didnt signup')
-			#you didnt sign up
+			print('didnt sign up')
+				#wrong password
 
 
 
@@ -65,6 +65,9 @@ def home():
 	return render_template("home.html")
 
 
+@app.route('/fullstory')
+def fullstory():
+	return render_template("fullstory.html")
 
 
 @app.route('/lhome/<uid>')
